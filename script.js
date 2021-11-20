@@ -26,7 +26,7 @@ function playRound(computerSelection, playerSelection){
         playerSelection = prompt('Invalid selection. Please type either rock, paper or scissors to continue').toLowerCase();
     }
     if (playerSelection === computerSelection){
-        console.log(`You both picked ${playerSelection} it's a tie."`)
+        console.log(`You both picked ${playerSelection} it's a tie.`)
     } 
     else {
         switch (playerSelection){
@@ -62,7 +62,20 @@ function playRound(computerSelection, playerSelection){
                 break;
         }
     }
-    console.log(score);
+    return score;
 }
 
-playRound(computerSelection(),playerSelection());
+function game(){
+    let score = 0;
+    for(let i=0; i < 5; i++){
+        score += playRound(computerSelection(),playerSelection());
+        if (score < 0){console.log(`You are losing to your opponent by ${score * -1}.`)}
+        else if (score > 0){console.log(`You are beating your opponent by ${score}.`)}
+        else console.log('You are tied with your opponent.')
+    }
+    if (score < 0) {console.log(`You lost to your opponent by ${score * -1}. How embarrassing...`)}
+    else if (score > 0) {console.log(`You beat your opponent by ${score}. Congratulations!`)}
+    else {console.log('You tied with the opponent. How boring...')}
+}
+
+game()
