@@ -1,0 +1,115 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greyBox{
+    background-color: grey;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    Width: 500px;
+    gap: 5px;
+}
+
+button{
+    color: white;
+    background-color: dodgerblue;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    flex: 1;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+button:focus{
+    background-color: royalblue;
+}
+
+button:hover{
+    border: 3px solid black;
+}
+
+.bestOfLabel{
+    display: flex;
+    font-size:18px;
+    font-weight:bolder;
+    color: whitesmoke;
+    background-color: black;
+    width: 488px;
+    border-bottom: 1px solid grey;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-right: 16px;
+}
+
+#bestOf{
+    color: rgb(24, 255, 24);
+    background-color: black;
+    text-align: center;
+    font-family: 'Agency FB';
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    width: 500px;
+    border: none;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    background-color: black;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+    color: whitesmoke;
+    width: 504px;
+    text-align: center;
+    height: 30px;
+}
+
+.scoreboardContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    background-color: black;
+    width: 464px;
+    height: 10px;
+    padding: 20px;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scoreboard > *{
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    color:rgb(24, 255, 24);
+    flex: 1;
+}
+
+.scoreboard > label{
+    margin-right: 30px;
+}
+
